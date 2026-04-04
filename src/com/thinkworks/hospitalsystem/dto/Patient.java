@@ -5,12 +5,22 @@ public class Patient {
     private String patientName;
     private int patientAge;
     private String gender;
+    private String disease;
 
-    public Patient(int patientId, String patientName, int patientAge, String gender) {
+    public Patient(int patientId, String patientName, int patientAge, String gender , String disease) {
         this.patientId = patientId;
         this.patientName = patientName;
         this.patientAge = patientAge;
         this.gender = gender;
+        this.disease=disease;
+    }
+
+    public String getDisease() {
+        return disease;
+    }
+
+    public void setDisease(String disease) {
+        this.disease = disease;
     }
 
     public int getPatientId() {
