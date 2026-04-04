@@ -5,7 +5,6 @@ import com.thinkworks.hospitalsystem.dto.Doctor;
 import com.thinkworks.hospitalsystem.dto.Patient;
 import com.thinkworks.hospitalsystem.service.HospitalService;
 
-import java.util.HashMap;
 
 public class MainRunner {
     public static void main(String[] args) {
@@ -22,9 +21,14 @@ public class MainRunner {
         Appointment[] appointments={appointment1,appointment2,appointment3};
 
         HospitalService hospitalService=new HospitalService();
+
         hospitalService.printPatientDetails(patient1);
+        System.out.println("  ");
         hospitalService.printDoctorDetails(doctor1);
+        System.out.println("  ");
         hospitalService.printAppointmentDetails(appointment1);
+        System.out.println("  ");
+
         System.out.println("total amount  : "+hospitalService.calculateTotalFee(appointments));
 
     }

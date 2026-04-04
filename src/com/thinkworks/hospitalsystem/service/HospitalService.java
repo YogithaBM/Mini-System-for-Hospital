@@ -8,6 +8,7 @@ public class HospitalService {
     public static final String HOSPITAL_NAME="YOU'LL DIEEEE";
 
     public void printPatientDetails(Patient patient){
+        System.out.println("Patient Details");
         System.out.println("ID : "+patient.getPatientId());
         System.out.println("Name : "+patient.getPatientName());
         System.out.println("Age : "+patient.getPatientAge());
@@ -16,6 +17,7 @@ public class HospitalService {
     }
 
     public void printDoctorDetails(Doctor doctor){
+        System.out.println("Doctor Details");
         System.out.println("ID : "+doctor.getDoctorId());
         System.out.println("Name : "+doctor.getDoctorName());
         System.out.println("Specialization : "+doctor.getSpecialization());
@@ -23,6 +25,7 @@ public class HospitalService {
     }
 
     public void printAppointmentDetails(Appointment appointment){
+        System.out.println("Appointment Details");
         System.out.println("Patient Name : "+appointment.getPatient().getPatientName());
         System.out.println("Doctor Name : "+appointment.getDoctor().getDoctorName());
         System.out.println("Date : "+appointment.getAppointmentDate());
